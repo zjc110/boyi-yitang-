@@ -1,0 +1,56 @@
+.weui-row{margin-top:10px;}
+.weui-row img{width:100%;max-width:100%;}
+.we-card .weui-col-50{width:calc((100% - 7px*1) / 2);}
+.weui-row:nth-child(1){margin-top:0;}
+.weui_cell_ft{font-size:14px;padding-top:3px;}
+
+.weui_cell_ft a{color:#888;}
+.swiper-pagination-bullet{background:#fff;opacity: 1;}
+.swiper-pagination-bullet-active{background:#04BE02;}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{bottom:5px;}
+
+.we-card.user{margin-top:0;}
+.user .weui-col-75{margin-top:10px;width:calc((100% - 6px*0.33333333333333326) / 1.3333333333333333);}
+.sign{font-size:13px;color:#b3b3b3;height:20px;overflow:hidden;margin-top:10px;}
+.username{height: 27px;line-height: 27px;display:block;}
+.weui-col-33 img{max-width:80%;}
+.info{border-top:1px solid rgba(219,219,219,.6);background-color:#fff;margin-top:0;font-size:14px;}
+.info a{width:50%;}
+.info .weui-col-100{padding:6px 0;}
+.info .weui-col-100.bd{border-right:1px solid rgba(219,219,219,.6);}
+.weui_cell_hd img{width:21px;/*margin-top:-2px;*/}
+.weui_panel{margin-top:0;}
+.mt10{margin-top:10px;}
+.weui_cell_hd img{margin-right:11px;vertical-align:middle;position:relative;margin-top:-1px;}
+
+.modify{border-bottom:1px solid #d9d9d9;margin-top:0;}
+.modify .weui-col-50{margin-top:10px;}
+.update{text-align:center;height:61px;}
+.update img{max-width:30%;margin-top:20px;}
+.help{position:absolute;top:20px;right:20px;text-align:right;}
+.help img{max-width:30%;}
+.we-card.m-info{margin-top:0;padding:0;font-size:14px;color:#393a3e;}
+
+footer.modify{height:57px;border:none;}
+footer.modify .footbar{z-index:999;height:49px;line-height:49px;}
+footer.modify .footbar a{color:#fff;}
+
+.weui_panel_bd .weui_cells > .weui_cell{padding:10px 21px;font-size:16px;}
+
+@media screen and (max-width:320px){
+	/*.modify .weui-col-50{width:calc((100% + 26px*1) / 2);}*/
+	.user .weui-col-25{margin-top:8px;}
+	.sign{margin-top:5px;}
+	.modify .sign{margin-top:0;}
+	.info .weui-col-50{padding:4px 0;}
+}
+
+.tel{width:80%;margin-top:2px;}
+.radio{background:url(../images/radio2.png);background-size:cover;background-position:center center;width:18px;height:18px;display:block;}
+.check{background:url(../images/radio.png);background-size:cover;}
+input[type="radio"]{display:none;}
+.weui-cells{background-color:#fff;padding:10px 15px;}
+.weui_cell:before{left:0;}
+.rz .weui_cell_hd{width:300px;}
+.rz .weui_cell_bd{text-align:center;padding-left:10px;}
+.weui-cells_radio .weui-check:checked + .weui-icon-checked:before{display:block;content:'\EA06';color:#09BB07;}

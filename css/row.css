@@ -1,0 +1,10 @@
+body{background-color:#ffffff;}
+.we-card{margin-top: 0;}
+.weui-col-33 img{max-width:90%;}
+.we-card .weui-row{padding-top:7px;padding-bottom:8px;}
+.weui_navbar{display:block;position:relative;}
+.sort1{height:1920px;background-color:#f8f8f8;position:fixed;}
+.sort2{background-color:#ffffff;overflow:hidden;margin-left:25%;}
+.weui_navbar_item{background-color:#f8f8f8;height:40px;line-height:40px;}
+.weui_navbar_item.weui_bar_item_on{background-color:#ffffff;}
+.weui_navbar:after,.weui_navbar_item:after{border:none;}

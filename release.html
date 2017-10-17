@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>发布拍品</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="艺拍堂">
+
+    <link rel="stylesheet" href="lib/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/release.css">
+  </head>
+
+  <body ontouchstart>
+    <form action="#">
+      <div class="we-card">        
+        <div class="weui-row">
+          <input type="text" placeholder="我的拍品名称...">
+        </div>           
+      </div>
+      <div class="we-card">
+        <div class="weui_cell weui_cell_select">
+          <div class="weui_cell_hd"><label for="" class="weui_label">分类</label></div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <select class="weui_select" name="select1">
+              <option selected="" value="0">选择分类</option>
+              <option value="1">书法</option>
+              <option value="2">国画</option>
+              <option value="3">篆刻</option>
+              <option value="4">印章</option>
+              <option value="4">杂件</option>
+            </select>
+          </div>
+        </div>
+        <div class="weui_cell weui_cell_select">
+          <div class="weui_cell_hd"><label for="" class="weui_label">二级分类</label></div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <select class="weui_select" name="select2">
+              <option selected="" value="0">选择分类</option>
+              <option value="1">书法1</option>
+              <option value="2">国画1</option>
+              <option value="3">篆刻1</option>
+              <option value="4">印章1</option>
+              <option value="4">杂件1</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="we-card">
+        <div class="weui-row">
+          <textarea name="" id="" cols="30" rows="5" placeholder="我的拍品描述..."></textarea>
+        </div>     
+      </div>
+      <div class="we-card weui_cell_warn">
+        <div class="weui_cell">
+          <div class="weui_cell_bd weui_cell_primary">
+            <div class="weui_uploader">
+              <div class="weui_uploader_hd weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">图片上传</div>
+                <div class="weui_cell_ft">3/9</div>
+              </div>
+              <div class="weui_uploader_bd">
+                <ul class="weui_uploader_files">
+                  <li class="weui_uploader_file" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)">
+                    <i class="weui_icon_clear"></i>
+                  </li>
+                  <li class="weui_uploader_file" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)">
+                    <i class="weui_icon_clear"></i>
+                  </li>
+                  <li class="weui_uploader_file" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)">
+                    <i class="weui_icon_clear"></i>
+                  </li>
+                  <li class="weui_uploader_file weui_uploader_status"  style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)">                    
+                    <div class="weui_uploader_status_content">
+                      <i class="weui_icon_warn"></i>
+                    </div>
+                    <i class="weui_icon_clear"></i>
+                  </li>
+                  <li class="weui_uploader_file weui_uploader_status"  style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)">                    
+                    <div class="weui_uploader_status_content">50%</div>
+                    <i class="weui_icon_clear"></i>
+                  </li>
+                </ul>
+                <div class="weui_uploader_input_wrp">
+                  <input class="weui_uploader_input" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" multiple="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-right small" style="margin-top: 5px;">下一步即表示同意《艺易堂竞拍服务协议》</p>
+
+      <footer>
+        <div class="weui_tab footbar">
+          <div class="weui_tab_bd">
+          </div>
+          <div class="weui_tabbar">         
+              <div class="weui-row weui-no-gutter">
+                <div class="weui-col-50"><a href="javascript:;" id='save'>保存到库存</a></div>
+                <div class="weui-col-50"><a href="added.html" id='show-confirm'>上架到店铺</a></div>                
+              </div>
+          </div>
+        </div>
+      </footer>
+    </form>  
+  
+    <script src="lib/jquery-2.1.4.js"></script>
+    <script src="js/jquery-weui.js"></script>
+    <script>
+      $(function(){
+        $('#save').click(function(){
+          $.alert("请先补全拍品信息", "当前拍品内容不全");
+          // $.toast("保存成功", function() {
+          //   console.log('close');
+          // });
+        });
+        $('.weui_icon_clear').each(function(){
+          $(this).click(function(){
+            $(this).parents('.weui_uploader_file').remove();
+          })
+        })
+      })
+    </script>
+    </body>
+  </html>

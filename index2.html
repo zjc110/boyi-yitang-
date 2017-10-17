@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>首页</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="艺拍堂">
+
+    <link rel="stylesheet" href="lib/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index2.css">
+    <style>
+      .swiper-container {
+        width: 100%;
+        height:125px;
+      } 
+      .swiper-container img {
+        display: block;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body ontouchstart>
+    <div class="weui_tab">
+      <div class="weui_navbar">
+        <a href="#tab1" class="weui_navbar_item weui_bar_item_on">
+          推荐
+        </a>
+        <a href="#tab2" class="weui_navbar_item">
+          拍品
+        </a>
+        <a href="#tab3" class="weui_navbar_item">
+          店铺
+        </a>
+        <a href="#tab4" class="weui_navbar_item">
+          集市
+        </a>
+        <a href="#tab5" class="weui_navbar_item">
+          关于
+        </a>
+        <a href="#tab6" class="weui_navbar_item">
+          帮助
+        </a>
+        <a href="release.html" class="weui_navbar_item upload">
+          <img src="images/upload2.png" alt="">
+        </a>
+      </div>
+      <div class="weui_tab_bd">
+        <div id="tab1" class="weui_tab_bd_item weui_tab_bd_item_active">
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><a href="develop.html"><img src="images/swiper-1.jpg" /></a></div>
+              <div class="swiper-slide"><a href="develop.html"><img src="images/swiper-2.jpg" /></a></div>
+              <div class="swiper-slide"><a href="develop.html"><img src="images/swiper-3.jpg" /></a></div>
+              <div class="swiper-slide"><a href="develop.html"><img src="images/swiper-4.jpg" /></a></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- 轮播 ends -->
+          <div class="weui-cells we-card notice">
+            <div class="weui-row weui-no-gutter">
+              <div class="weui-col-10"><img src="images/notice.png" class="img-responsive" alt=""></div>
+              <div class="weui-col-85 text-left">最新入驻艺术家：鲁大东、宋开智、颜子茗、鲍贤伦、陈振濂、金心明、沈乐平</div>
+              <div class="weui-col-5"></div>
+            </div>
+          </div>
+          <!-- 广播 -->
+          <div class="weui-cells we-card">
+            <div class="weui-row title">
+              <div class="weui-col-50">
+                最热拍品
+              </div>
+              <div class="weui-col-50 weui_cell_ft">
+                <a href="pplist.html">查看更多</a>
+              </div>
+            </div>
+            <div class="weui-row">
+              <div class="weui-col-50 imgbox">
+                <a href="ppinfo.html"><img class="img-c" src="images/swiper-1.jpg" alt=""></a>
+              </div>
+              <div class="weui-col-50">
+                <div class="weui-row">
+                  <div class="weui-col-50 imgbox"><a href="ppinfo.html"><img class="img-c" src="images/swiper-1.jpg" alt=""></a></div>
+                  <div class="weui-col-50 imgbox"><a href="ppinfo.html"><img class="img-c" src="images/swiper-2.jpg" alt=""></a></div>
+                  <div class="weui-col-50 imgbox"><a href="ppinfo.html"><img class="img-c" src="images/swiper-3.jpg" alt=""></a></div>
+                  <div class="weui-col-50 imgbox"><a href="ppinfo.html"><img class="img-c" src="images/swiper-4.jpg" alt=""></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 最热 ends -->
+
+          <div class="weui-cells we-card">
+            <div class="weui-row title">
+              <div class="weui-col-50">
+                最新拍品
+              </div>
+              <div class="weui-col-50 weui_cell_ft">
+                <a href="pplist.html">查看更多</a>
+              </div>
+            </div>
+            <div class="weui-row">
+              <div class="weui-col-50 imgbox">
+                <a href="ppinfo.html"><img src="images/swiper-1.jpg" class="img-c" alt=""></a>
+              </div>
+              <div class="weui-col-50">
+                <div class="weui-row">
+                  <div class="weui-col-50 imgbox"><a href="ppinfo.html"><img src="images/swiper-4.jpg" class="img-c" alt=""></a></div>
+                  <div class="weui-col-50 imgbox"><a href="ppinfo.html"><img src="images/swiper-3.jpg" class="img-c" alt=""></a></div>
+                  <div class="weui-col-50 imgbox"><a href="ppinfo.html"><img src="images/swiper-2.jpg" class="img-c" alt=""></a></div>
+                  <div class="weui-col-50 imgbox"><a href="ppinfo.html"><img src="images/swiper-1.jpg" class="img-c" alt=""></a></div>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <!-- 最新 ends -->
+          
+          <a href="release.html">
+            <div class="weui-cells release">
+              <div class="weui-row fb text-center">
+                <div class="weui-col-33">
+                  &nbsp;
+                </div>          
+                <div class="weui-col-33">
+                  <img src="images/yjkd.png" alt="">
+                </div>
+                <div class="weui-col-33">
+                  &nbsp;
+                </div>                   
+              </div>
+            </div>
+          </a>
+          <!-- 我要发布 ends -->
+
+          <div class="weui-cells we-card">
+            <div class="weui-row title">
+              <div class="weui-col-50">
+                人气店铺
+              </div>
+              <div class="weui-col-50 weui_cell_ft">
+                <a href="shoplist.html">查看更多</a>
+              </div>
+            </div>
+            <div class="weui-row text-center mt13">
+              <div class="weui-col-33">
+                <a href="usershow.html">
+                  <img src="images/s.jpg" class="u-pic" alt="">
+                  <div class="u-name">李四<img src="images/label1.png" class="label" alt=""></div>
+                  <p class="u-intro">青年艺术家</p>
+                  <p class="u-info"><img src="images/icon-pp.png" class="smallicon" alt=""><span class="p-num">176</span>&nbsp;&nbsp;<img src="images/icon-fans.png" class="smallicon" alt=""><span class="p-num">258</span></p>
+                </a>
+              </div>
+              <div class="weui-col-33">
+                <a href="usershow.html">
+                  <img src="images/s.jpg" class="u-pic" alt="">
+                  <div class="u-name">张三<img src="images/label2.png" class="label" alt=""></div>
+                  <p class="u-intro">翡翠专营店</p>
+                  <p class="u-info"><img src="images/icon-pp.png" class="smallicon" alt=""><span class="p-num">108</span>&nbsp;&nbsp;<img src="images/icon-fans.png" class="smallicon" alt=""><span class="p-num">220</span></p>
+                </a>
+              </div>
+              <div class="weui-col-33">
+                <a href="usershow.html">
+                  <img src="images/s.jpg" class="u-pic" alt="">
+                  <div class="u-name">王五<img src="images/label2.png" class="label" alt=""></div>
+                  <p class="u-intro">近现代书画专营</p>
+                  <p class="u-info"><img src="images/icon-pp.png" class="smallicon" alt=""><span class="p-num">98</span>&nbsp;&nbsp;<img src="images/icon-fans.png" class="smallicon" alt=""><span class="p-num">220</span></p>
+                </a>
+              </div>
+            </div>
+          </div> 
+          <!-- 人气 ends -->
+        </div>
+        <!-- tab1 ends -->
+        <div id="tab2" class="weui_tab_bd_item">
+          <a href="ppinfo.html">
+            <div class="we-card">
+              <div class="weui-row">
+                <div class="weui-col-75">
+                  <p>这里是拍品的名字</p>
+                  <span class="small">3分钟前&nbsp;&nbsp;来自用户&nbsp;艺术小店</span>
+                </div>
+                <div class="weui-col-25 weui_cell_ft c-green">书法</div>
+              </div>
+              <div class="weui-row">
+                <div class="weui-col-33">
+                  <img src="images/swiper-1.jpg" class="img-c" alt="">
+                </div>
+                <div class="weui-col-33">
+                  <img src="images/swiper-2.jpg" class="img-c" alt="">
+                </div>
+                <div class="weui-col-33">
+                  <img src="images/swiper-4.jpg" class="img-c" alt="">
+                </div>
+              </div>
+              <p class="info">
+                最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行...
+              </p>
+              <div class="weui-row">
+                <div class="weui-col-50">
+                  <span class="price c-red">￥99,999.0</span> <span class="ptime">100人出价</span>
+                </div>
+                <div class="weui-col-50 time text-center">
+                  <p>剩余&nbsp;124小时01分01秒</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:;" class="weui_btn weui_btn_default btn_auction c-grey"><span class="collect">点赞</span>&nbsp;<span class="cnum">998</span></a>
+          
+          <a href="ppinfo.html">
+            <div class="we-card">
+              <div class="weui-row">
+                <div class="weui-col-75">
+                  <p>这里是拍品的名字</p>
+                  <span class="small">3分钟前&nbsp;&nbsp;来自用户&nbsp;艺术小店</span>
+                </div>
+                <div class="weui-col-25 weui_cell_ft c-green">国画</div>
+              </div>
+              <div class="weui-row">
+                <div class="weui-col-33">
+                  <img src="images/swiper-1.jpg" class="img-c" alt="">
+                </div>
+                <div class="weui-col-33">
+                  <img src="images/swiper-4.jpg" class="img-c" alt="">
+                </div>
+                <div class="weui-col-33">                
+                </div>
+              </div>
+              <p class="info">
+                最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行...
+              </p>
+              <div class="weui-row">
+                <div class="weui-col-50">
+                  <span class="price c-red">￥99,999.0</span> <span class="ptime">100人出价</span>
+                </div>
+                <div class="weui-col-50 time text-center">
+                  <p>剩余&nbsp;10小时28分01秒</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:;" class="weui_btn weui_btn_default btn_auction c-grey"><span class="collect">点赞</span>&nbsp;<span class="cnum">998</span></a>
+          
+          <a href="ppinfo.html">
+            <div class="we-card">
+              <div class="weui-row">
+                <div class="weui-col-75">
+                  <p>这里是拍品的名字</p>
+                  <span class="small">3分钟前&nbsp;&nbsp;来自用户&nbsp;艺术小店</span>
+                </div>
+                <div class="weui-col-25 weui_cell_ft c-green">篆刻</div>
+              </div>
+              <div class="weui-row">
+                <div class="weui-col-33">
+                  <img src="images/m.jpg" alt="">
+                </div>
+                <div class="weui-col-33">                
+                </div>
+                <div class="weui-col-33">                
+                </div>
+              </div>
+              <p class="info">
+                最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行...
+              </p>
+              <div class="weui-row">
+                <div class="weui-col-50">
+                  <span class="price c-red">￥99,999.0</span> <span class="ptime">100人出价</span>
+                </div>
+                <div class="weui-col-50 time text-center">
+                  <p>剩余&nbsp;11分11秒</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:;" class="weui_btn weui_btn_default btn_auction c-green"><span class="collect">已赞</span>&nbsp;<span class="cnum">898</span></a>          
+        </div>
+        <!-- tab2 ends -->
+
+        <div id="tab3" class="weui_tab_bd_item">
+          <div class="we-card">
+            <a href="usershow.html">
+              <div class="weui-row">              
+                <div class="weui-col-20"><img src="images/m.jpg" class="img-cricle img-responsive" alt=""></div>
+                <div class="weui-col-80 shopinfo c-black">
+                  <div class="shop-name clearfix"><p class="pull-left">小王的店铺</p><img src="images/label1.png" class="blabel pull-left" alt=""></div>
+                  <div class="weui-row mt0">
+                    <div class="weui-col-66">
+                      <p class="shop-intro c-grey biger">这里是我的店铺签名这里是我的店铺签名...</p>
+                    </div>          
+                    <div class="weui-col-33 text-center">
+                      <p class="shop-area biger c-grey">当前<span class="c-red fontbase">66</span>件</p>
+                    </div>            
+                  </div>
+                </div>
+              </div>          
+            </a>
+          </div>
+
+          <div class="we-card">
+            <a href="usershow.html">
+              <div class="weui-row">              
+                <div class="weui-col-20"><img src="images/m.jpg" class="img-cricle img-responsive" alt=""></div>
+                <div class="weui-col-80 shopinfo c-black">
+                  <div class="shop-name clearfix"><p class="pull-left">小王的店铺</p><img src="images/label2.png" class="blabel pull-left" alt=""></div>
+                  <div class="weui-row mt0">
+                    <div class="weui-col-66">
+                      <p class="shop-intro c-grey biger">这里是我的店铺签名这里是我的店铺签名...</p>
+                    </div>          
+                    <div class="weui-col-33 text-center">
+                      <p class="shop-area biger c-grey">当前<span class="c-red fontbase">66</span>件</p>
+                    </div>            
+                  </div>
+                </div>
+              </div>          
+            </a>
+          </div>
+
+          <div class="we-card">
+            <a href="usershow.html">
+              <div class="weui-row">              
+                <div class="weui-col-20"><img src="images/m.jpg" class="img-cricle img-responsive" alt=""></div>
+                <div class="weui-col-80 shopinfo c-black">
+                  <div class="shop-name clearfix"><p class="pull-left">小王的店铺</p><img src="images/label1.png" class="blabel pull-left" alt=""></div>
+                  <div class="weui-row mt0">
+                    <div class="weui-col-66">
+                      <p class="shop-intro c-grey biger">这里是我的店铺签名这里是我的店铺签名...</p>
+                    </div>          
+                    <div class="weui-col-33 text-center">
+                      <p class="shop-area biger c-grey">当前<span class="c-red fontbase">66</span>件</p>
+                    </div>            
+                  </div>
+                </div>
+              </div>          
+            </a>
+          </div>
+
+          <div class="we-card">
+            <a href="usershow.html">
+              <div class="weui-row">              
+                <div class="weui-col-20"><img src="images/m.jpg" class="img-cricle img-responsive" alt=""></div>
+                <div class="weui-col-80 shopinfo c-black">
+                  <div class="shop-name clearfix"><p class="pull-left">小王的店铺</p><img src="images/label2.png" class="blabel pull-left" alt=""></div>
+                  <div class="weui-row mt0">
+                    <div class="weui-col-66">
+                      <p class="shop-intro c-grey biger">这里是我的店铺签名这里是我的店铺签名...</p>
+                    </div>          
+                    <div class="weui-col-33 text-center">
+                      <p class="shop-area biger c-grey">当前<span class="c-red fontbase">66</span>件</p>
+                    </div>            
+                  </div>
+                </div>
+              </div>          
+            </a>
+          </div>
+
+          <div class="we-card">
+            <a href="usershow.html">
+              <div class="weui-row">              
+                <div class="weui-col-20"><img src="images/m.jpg" class="img-cricle img-responsive" alt=""></div>
+                <div class="weui-col-80 shopinfo c-black">
+                  <div class="shop-name clearfix"><p class="pull-left">小王的店铺</p><img src="images/label1.png" class="blabel pull-left" alt=""></div>
+                  <div class="weui-row mt0">
+                    <div class="weui-col-66">
+                      <p class="shop-intro c-grey biger">这里是我的店铺签名这里是我的店铺签名...</p>
+                    </div>          
+                    <div class="weui-col-33 text-center">
+                      <p class="shop-area biger c-grey">当前<span class="c-red fontbase">66</span>件</p>
+                    </div>            
+                  </div>
+                </div>
+              </div>          
+            </a>
+          </div>
+
+          <div class="we-card">
+            <a href="usershow.html">
+              <div class="weui-row">              
+                <div class="weui-col-20"><img src="images/m.jpg" class="img-cricle img-responsive" alt=""></div>
+                <div class="weui-col-80 shopinfo c-black">
+                  <div class="shop-name clearfix"><p class="pull-left">小王的店铺</p><img src="images/label2.png" class="blabel pull-left" alt=""></div>
+                  <div class="weui-row mt0">
+                    <div class="weui-col-66">
+                      <p class="shop-intro c-grey biger">这里是我的店铺签名这里是我的店铺签名...</p>
+                    </div>          
+                    <div class="weui-col-33 text-center">
+                      <p class="shop-area biger c-grey">当前<span class="c-red fontbase">66</span>件</p>
+                    </div>            
+                  </div>
+                </div>
+              </div>          
+            </a>
+          </div>          
+        </div>
+        <!-- tab3 ends -->
+
+        <div id="tab4" class="weui_tab_bd_item">
+          <a href="ppinfo.html">
+            <div class="we-card">
+              <div class="weui-row">
+                <div class="weui-col-75">
+                  <p>这里是拍品的名字</p>
+                  <span class="small">3分钟前&nbsp;&nbsp;来自用户&nbsp;艺术小店</span>
+                </div>
+                <div class="weui-col-25 weui_cell_ft c-green">书法</div>
+              </div>
+              <div class="weui-row">
+                <div class="weui-col-33">
+                  <img src="images/m.jpg" alt="">
+                </div>
+                <div class="weui-col-33">
+                  <img src="images/m.jpg" alt="">
+                </div>
+                <div class="weui-col-33">
+                  <img src="images/m.jpg" alt="">
+                </div>
+              </div>
+              <p class="info">
+                最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行...
+              </p>
+              <div class="weui-row">
+                <div class="weui-col-50">
+                  <span class="price c-red">￥99,999.0</span> <span class="ptime">100人出价</span>
+                </div>
+                <div class="weui-col-50 time text-center">
+                  <p>剩余&nbsp;124小时01分01秒</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:;" class="weui_btn weui_btn_default btn_auction c-grey"><span class="collect">点赞</span>&nbsp;<span class="cnum">498</span></a>
+          
+          <a href="ppinfo.html">
+            <div class="we-card">
+              <div class="weui-row">
+                <div class="weui-col-75">
+                  <p>这里是拍品的名字</p>
+                  <span class="small">3分钟前&nbsp;&nbsp;来自用户&nbsp;艺术小店</span>
+                </div>
+                <div class="weui-col-25 weui_cell_ft c-green">国画</div>
+              </div>
+              <div class="weui-row">
+                <div class="weui-col-33">
+                  <img src="images/m.jpg" alt="">
+                </div>
+                <div class="weui-col-33">
+                  <img src="images/m.jpg" alt="">
+                </div>
+                <div class="weui-col-33">                
+                </div>
+              </div>
+              <p class="info">
+                最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行...
+              </p>
+              <div class="weui-row">
+                <div class="weui-col-50">
+                  <span class="price c-red">￥99,999.0</span> <span class="ptime">100人出价</span>
+                </div>
+                <div class="weui-col-50 time text-center">
+                  <p>剩余&nbsp;10小时28分01秒</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:;" class="weui_btn weui_btn_default btn_auction c-grey"><span class="collect">点赞</span>&nbsp;<span class="cnum">558</span></a>
+          
+          <a href="ppinfo.html">
+            <div class="we-card">
+              <div class="weui-row">
+                <div class="weui-col-75">
+                  <p>这里是拍品的名字</p>
+                  <span class="small">3分钟前&nbsp;&nbsp;来自用户&nbsp;艺术小店</span>
+                </div>
+                <div class="weui-col-25 weui_cell_ft c-green">篆刻</div>
+              </div>
+              <div class="weui-row">
+                <div class="weui-col-33">
+                  <img src="images/m.jpg" alt="">
+                </div>
+                <div class="weui-col-33">                
+                </div>
+                <div class="weui-col-33">                
+                </div>
+              </div>
+              <p class="info">
+                最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行最多三行...
+              </p>
+              <div class="weui-row">
+                <div class="weui-col-50">
+                  <span class="price c-red">￥99,999.0</span> <span class="ptime">100人出价</span>
+                </div>
+                <div class="weui-col-50 time text-center">
+                  <p>剩余&nbsp;11分11秒</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:;" class="weui_btn weui_btn_default btn_auction c-green"><span class="collect">已赞</span>&nbsp;<span class="cnum">628</span></a>
+        </div>
+        <!-- tab4 ends -->
+
+        <div id="tab5" class="weui_tab_bd_item">
+          <img src="images/develop.jpg" class="img-responsive" alt="">
+          <br><br>
+          <p class="text-center">正在开发中....</p>
+          <p class="text-center">still in development....</p>
+        </div>
+        <!-- tab5 ends -->
+
+        <div id="tab6" class="weui_tab_bd_item">
+          <img src="images/develop.jpg" class="img-responsive" alt="">
+          <br><br>
+          <p class="text-center">正在开发中....</p>
+          <p class="text-center">still in development....</p>
+        </div>
+        <!-- tab6 ends -->
+      </div>
+    </div>
+      
+    <footer>
+      <div class="weui_tab footbar">
+        <div class="weui_tab_bd">
+        </div>
+        <div class="weui_tabbar">
+          <a href="index.html" class="weui_tabbar_item weui_bar_item_on">
+            <div class="weui_tabbar_icon">
+              <img src="images/footbar/icon1-active.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">首页</p>
+          </a>
+          <a href="sorts.html" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+              <img src="images/footbar/icon2.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">分类</p>
+          </a>
+          <a href="auction.html" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+              <img src="images/footbar/icon3.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">拍卖</p>
+          </a>
+          <a href="news.html" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+              <img src="images/footbar/icon4.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">艺事</p>
+          </a>
+          <a href="mine.html" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+              <img src="images/footbar/icon5.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">我的</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="lib/jquery-2.1.4.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery.actual.min.js"></script>
+    <script src="js/jquery-weui.js"></script>    
+    <script src="js/img-custom2.js"></script>
+
+    <script>
+      $(function(){
+        //slider
+        var w = $(window).width();
+        $(".swiper-container").css('height',w/3);
+        $(".swiper-container").swiper({
+          loop: true,
+          autoplay: 3000
+        });
+
+        //点赞
+        $('.weui_btn').each(function() {
+          $(this).click(function(){
+            var num = Number($(this).children('.cnum').html());
+            if($(this).hasClass('c-green')){
+              $(this).removeClass('c-green');
+              $(this).addClass('c-grey');
+              $(this).children('.collect').html('点赞');              
+              $(this).children('.cnum').html(num-1);
+              $.toast("取消点赞", "cancel", function(toast) {
+                console.log(toast);
+              });
+            }else{              
+              $(this).removeClass('c-grey');
+              $(this).addClass('c-green'); 
+              $(this).children('.collect').html('已赞');
+              $(this).children('.cnum').html(num+1);
+              $.toast("点赞成功", function() {
+                console.log('close');
+              })
+            }            
+          });          
+        });
+      })
+    </script>
+    </body>
+  </html>

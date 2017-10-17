@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>双十一·收藏经典</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="艺拍堂">
+
+    <link rel="stylesheet" href="lib/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/common.css">
+  </head>
+
+  <body ontouchstart>
+    <div><img src="images/activity/top.png" class="img-responsive" alt=""></div>
+    <div><a href="#"><img src="images/activity/zc1.png" class="img-responsive" alt=""></a></div>
+    <div><a href="#"><img src="images/activity/zc2.png" class="img-responsive" alt=""></a></div>
+    <div><a href="#"><img src="images/activity/zc3.png" class="img-responsive" alt=""></a></div>
+    <div><a href="#"><img src="images/activity/zc4.png" class="img-responsive" alt=""></a></div>
+    <div><a href="#"><img src="images/activity/zc5.png" class="img-responsive" alt=""></a></div>
+    <div><img src="images/activity/totop.png" class="img-responsive totop" alt=""></div>
+    
+    <script src="lib/jquery-2.1.4.js"></script>
+    <script src="js/jquery-weui.js"></script>
+    <script src='js/swiper.js'></script>
+
+    <script>
+      $(function(){
+        $(".totop").click(function(){
+          $("html body").animate({scrollTop:0},1300);
+        })
+      })
+
+    </script>
+    </body>
+  </html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>拍品列表</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="艺拍堂">
+
+    <link rel="stylesheet" href="lib/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/auction.css">
+    <style>
+    .weui_tab_bd.pplist{padding:10px 15px;}
+    dl{background-color:#fff;border-radius:8px;overflow:hidden;margin-bottom:10px;}
+    dd.tt,dd.sz,dd.price{padding:5px 0;}
+    dd.tt{background:rgba(0,0,0,0.2);position:relative;margin-top:-30px;color:#fff;overflow:hidden;}
+    dd.price{font-size:11px;text-align:left;padding:5px 10px;}
+    dd.sz{padding-top: 0;}
+    img.middleicon{margin-top:2px;}
+    .shop-name{max-height:25px;line-height:25px;overflow:hidden;}
+    .we-card{margin-bottom:8px;}
+    .weui-row .weui-row{margin-top:1px;}
+    .time{font-size:11px;background-color:#393a3e;text-align:center;}
+    .time p{float:none;}
+    .shopinfo{padding-left:8px;}
+    </style>
+  </head>
+
+  <body ontouchstart>  
+    <div><a href="#"><img src="images/activity/zc1.png" class="img-responsive" alt=""></a></div>
+    <div class="weui_tab_bd pplist">
+      <div class="weui_tab_bd_item weui_tab_bd_item_active">
+        <div class="weui-row">
+          <div class="weui-col-50 zp text-center clearfix">
+            <dl>
+              <a href="ppinfo.html">
+                <dt><div><img src="images/sort.jpg" class="img-c" alt=""></div></dt>
+                <dd class="tt small">这里是作品的标题1</dd>
+                <dd class="price clearfix"><span class="c-red">￥500,00</span><img src="images/icon-yu.png" class="middleicon pull-right" alt=""></dd>
+              </a>
+              <dd class="sz small" onclick="guanzhu(this)"><a href="javacript:void(0)">我要围观</a></dd>
+            </dl>
+          </div>
+          <div class="weui-col-50 zp text-center clearfix">
+            <dl>
+              <a href="ppinfo.html">
+                <dt><div><img src="images/sort2.jpg" class="img-c" alt=""></div></dt>
+                <dd class="tt small">这里是作品的标题1</dd>
+                <dd class="price clearfix"><span class="c-red">￥500,00</span><img src="images/icon-yu.png" class="middleicon pull-right" alt=""></dd>
+              </a>
+              <dd class="sz small" onclick="guanzhu(this)"><a href="javacript:void(0)">我要围观</a></dd>
+            </dl>
+          </div>
+          <div class="weui-col-50 zp text-center clearfix">
+            <dl>
+              <a href="ppinfo.html">
+                <dt><div><img src="images/sort3.jpg" class="img-c" alt=""></div></dt>
+                <dd class="tt small">这里是作品的标题1</dd>
+                <dd class="price clearfix"><span class="c-red">￥500,00</span><img src="images/icon-yu.png" class="middleicon pull-right" alt=""></dd>
+              </a>
+              <dd class="sz small" onclick="guanzhu(this)"><a href="javacript:void(0)">我要围观</a></dd>
+            </dl>
+          </div>
+          <div class="weui-col-50 zp text-center clearfix">
+            <dl>
+              <a href="ppinfo.html">
+                <dt><div><img src="images/sort4.jpg" class="img-c" alt=""></div></dt>
+                <dd class="tt small">这里是作品的标题1</dd>
+                <dd class="price clearfix"><span class="c-red">￥500,00</span><img src="images/icon-yu.png" class="middleicon pull-right" alt=""></dd>
+              </a>
+              <dd class="sz small" onclick="guanzhu(this)"><a href="javacript:void(0)">我要围观</a></dd>
+            </dl>
+          </div>
+          <div class="weui-col-50 zp text-center clearfix">
+            <dl>
+              <a href="ppinfo.html">
+                <dt><div><img src="images/sort.jpg" class="img-c" alt=""></div></dt>
+                <dd class="tt small">这里是作品的标题1</dd>
+                <dd class="price clearfix"><span class="c-red">￥500,00</span><img src="images/icon-yu.png" class="middleicon pull-right" alt=""></dd>
+              </a>
+              <dd class="sz small" onclick="guanzhu(this)"><a href="javacript:void(0)">我要围观</a></dd>
+            </dl>
+          </div>
+          <div class="weui-col-50 zp text-center clearfix">
+            <dl>
+              <a href="ppinfo.html">
+                <dt><div><img src="images/sort2.jpg" class="img-c" alt=""></div></dt>
+                <dd class="tt small">这里是作品的标题1</dd>
+                <dd class="price clearfix"><span class="c-red">￥500,00</span><img src="images/icon-yu.png" class="middleicon pull-right" alt=""></dd>
+              </a>
+              <dd class="sz small" onclick="guanzhu(this)"><a href="javacript:void(0)">我要围观</a></dd>
+            </dl>
+          </div>              
+        </div>        
+      </div>
+    </div>
+      
+    <!-- <footer>
+      <div class="weui_tab footbar">
+        <div class="weui_tab_bd">
+        </div>
+        <div class="weui_tabbar">
+          <a href="index.html" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+              <img src="images/footbar/icon1.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">首页</p>
+          </a>
+          <a href="sorts.html" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+              <img src="images/footbar/icon2.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">分类</p>
+          </a>
+          <a href="auction.html" class="weui_tabbar_item weui_bar_item_on">
+            <div class="weui_tabbar_icon">
+              <img src="images/footbar/icon3-active.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">拍卖</p>
+          </a>
+          <a href="javascript:;" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+              <img src="images/footbar/icon4.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">艺事</p>
+          </a>
+          <a href="javascript:;" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+              <img src="images/footbar/icon5.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">我的</p>
+          </a>
+        </div>
+      </div>
+    </footer> -->
+
+    <script src="lib/jquery-2.1.4.js"></script>
+    <script src="js/jquery-weui.js"></script>
+    <script src="js/img-custom.js"></script>
+    <script>
+      function guanzhu(obj){
+        if($(obj).hasClass('c-green')){
+          $(obj).removeClass('c-green');
+          $(obj).find('a').html('我要围观');              
+          $.toast("取消围观", "cancel", function(toast) {
+            console.log(toast);
+          });
+        }else{                            
+          $(obj).addClass('c-green'); 
+          $(obj).find('a').html('已围观');              
+          $.toast("已围观", function() {
+            console.log('close');
+          })
+        }            
+      }
+    </script>
+    </body>
+  </html>

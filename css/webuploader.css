@@ -1,0 +1,40 @@
+.uploader-list li{display:block;float:left;}
+.file-item{padding:0;margin:0 9px 9px 0;}
+.file-item .error{top:0;left:0;right:0;}
+.file-item .info{bottom:0;left:0;right:0;}
+#uploader-demo .thumbnail{width:79px;height:79px;}
+.webuploader-container {
+	/*position: relative;*/
+	width:79px;
+	height:79px;
+	overflow: hidden;
+	float:left;
+	background: url(../images/uploads.png) no-repeat;
+	background-size: cover;
+}
+.webuploader-element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+.webuploader-pick {
+	position: relative;
+	width:79px;
+	height:79px;
+	display: inline-block;
+	cursor: pointer;
+	/*padding: 10px 15px;*/
+	color: #fff;
+	text-align: center;
+	border-radius: 3px;
+	overflow: hidden;
+}
+/*.webuploader-pick-hover {
+	background: #00a2d4;
+}*/
+
+.webuploader-pick-disable {
+	opacity: 0.6;
+	pointer-events:none;
+}
+

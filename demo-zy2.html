@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>开发中</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="艺拍堂">
+
+    <link rel="stylesheet" href="lib/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/common.css">
+  </head>
+
+  <body ontouchstart>    
+    <p class="zq">大家好，&lt;br&gt;我是小明</p>
+    <button id="change" value="点我试试"></button>
+    <p class="zy"></p>
+
+    <script src="lib/jquery-2.1.4.js"></script>
+    <script src="js/jquery-weui.js"></script>    
+    <script>
+      $(function(){
+        $('#change').click(function(){
+          var x = $(".zq").html();
+          console.log(x);
+          var reg = /(<?|<\/)(td|tr|table).*?>/g;
+          x= x.replace(reg,"");
+          $(".zy").html(x);
+        })
+
+        function html2Escape(sHtml) {
+         return sHtml.replace(/&lt;/gm,'<');
+        }
+
+      })
+      
+    </script>
+    </body>
+  </html>

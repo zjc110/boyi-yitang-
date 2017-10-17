@@ -1,0 +1,41 @@
+<html class="pixel-ratio-1"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>jQuery WEUI</title>
+    <meta name="description" content="UI lib for build hybrid wechat web app.&#10;">
+
+    <link href="/lib/weui.css" rel="stylesheet">
+    <link href="/css/jquery-weui.css" rel="stylesheet">
+    <link href="/css/docs-demos.css" rel="stylesheet">
+    <link href="https://jqweui.com/docs-demos/infinite-with-navbar.html" rel="canonical">
+    <link title="jQuery WEUI" href="https://jqweui.com/feed.xml" rel="alternate" type="application/rss+xml">
+  </head>
+
+  <body ontouchstart="">
+    <p class="zq">大家好，&lt;br&gt;我是&lt;br&gt;&nbsp;&nbsp;小明</p>
+    <button type="button" id="change">点我试试</button>
+    <p class="zy"></p>
+    
+
+    <script src="lib/jquery-2.1.4.js"></script>
+    <script src="js/jquery-weui.js"></script>
+    <script src="js/demos.js"></script>
+  
+    <script>
+      $(function(){
+        $('#change').click(function(){
+          $(".zy").html(html2Escape($(".zq").html()));
+        })
+        function html2Escape(sHtml) {
+          sHtml = sHtml.replace(/&gt;/g, ">");
+          sHtml = sHtml.replace(/&lt;/g, "<");
+          sHtml = sHtml.replace(/&nbsp;/g, " ");
+          return sHtml;
+        }
+      })
+      
+    </script>
+
+</body></html>

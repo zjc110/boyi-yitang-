@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>发布拍品</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="艺拍堂">
+
+    <link rel="stylesheet" href="lib/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/added.css">
+  </head>
+
+  <body ontouchstart>
+    <form action="#">
+      <div class="we-card">
+        <div class="weui_cell weui_cell_switch">
+          <div class="weui_cell_hd weui_cell_primary">上架是否立即拍卖</div>
+          <div class="weui_cell_ft">
+            <input class="weui_switch" type="checkbox">
+          </div>
+        </div>
+        <div class="weui_cell">
+          <div class="weui_cell_hd"><label for="time-format" class="weui_label">结拍时间</label></div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input class="weui_input" id="time-format" type="text" value="如：2016-12-12 12:00">
+          </div>
+        </div>        
+        <div class="weui_cell">
+          <div class="weui_cell_hd"><label class="weui_label">起拍价</label></div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input class="weui_input" type="tel" placeholder="请输入起拍价">
+          </div>
+        </div>
+        <div class="weui_cell">
+          <div class="weui_cell_hd"><label class="weui_label">加价幅度</label></div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input class="weui_input" type="tel" placeholder="请输入加价幅度">
+          </div>
+        </div>
+        <div class="weui_cell">
+          <div class="weui_cell_hd"><label class="weui_label">市场价</label></div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input class="weui_input" type="tel" placeholder="请输入市场价">
+          </div>
+        </div>
+        <div class="weui_cell">
+          <div class="weui_cell_hd"><label class="weui_label">保证金</label></div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input class="weui_input" type="tel" placeholder="请输入保证金">
+          </div>
+        </div>
+        <div class="weui_cell weui_cell_select">
+          <div class="weui_cell_hd"><label for="" class="weui_label">上拍类型</label></div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <select class="weui_select pmType" name="type">
+              <option selected="" value="0">每日一拍</option>
+              <option value="1">每周一拍</option>
+              <option value="2">个人专场</option>
+            </select>
+          </div>
+        </div>
+        <div class="weui_cell weui_cell_select zcxz">
+          <div class="weui_cell_hd"><label for="" class="weui_label">选择专场</label></div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <select class="weui_select" name="zc">
+              <option selected="" value="0">专场1</option>
+              <option value="1">专场2</option>
+              <option value="2">专场3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+        <div class="weui_cell">
+          <p>可选</p>
+        </div>
+        
+        <div class="we-card">
+          <div class="weui_cell weui_cell_switch">
+            <div class="weui_cell_hd weui_cell_primary">7天包退</div>
+            <div class="weui_cell_ft">
+              <input class="weui_switch" type="checkbox">
+            </div>
+          </div>
+
+          <div class="weui_cell weui_cell_switch">
+            <div class="weui_cell_hd weui_cell_primary">包邮</div>
+            <div class="weui_cell_ft">
+              <input class="weui_switch" type="checkbox">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <footer>
+        <div class="weui_tab footbar">
+          <div class="weui_tab_bd">
+          </div>
+          <div class="weui_tabbar">         
+              <div class="weui-row weui-no-gutter">
+                <div class="weui-col-50"><a href="javascript:;" id='save'>保存到库存</a></div>       
+                <div class="weui-col-50"><a href="added.html" id='show-confirm'>确认上架</a></div>                
+              </div>
+          </div>
+        </div>
+      </footer>
+    </form>  
+  
+    <script src="lib/jquery-2.1.4.js"></script>
+    <script src="js/jquery-weui.js"></script>
+    <script>
+      $(function(){
+        $('#save').click(function(){
+          $.toast("保存成功", function() {
+            console.log('close');
+          });
+        });
+
+        $("#time-format").datetimePicker({
+          title: '选择结拍时间',
+          dateSplit: '-',
+          onChange: function (picker, values, displayValues) {
+            console.log(values);
+          }
+        });
+
+        $('.pmType').change(function() {
+         var Ptype = $(this).children('option:selected').val();
+         if(Ptype == 2) {
+          $('.zcxz').css('display', 'flex');
+         } else {
+          $('.zcxz').css('display', 'none');
+         }
+        });
+      })
+    </script>
+    </body>
+  </html>

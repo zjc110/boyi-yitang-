@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>全部留言</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="艺拍堂">
+
+    <link rel="stylesheet" href="lib/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/newsinfo.css">
+  </head>
+
+  <body ontouchstart>   
+    <div class="weui-cells we-card c-black">
+      <div class="weui-row title">
+        <div class="weui-col-75 cb-green">
+          留言（100）
+        </div>
+        <div class="weui-col-25 weui_cell_ft refresh">
+          <a href="all-message.html"><img src="images/all-message.png" class="img-responsive" alt=""></a>
+        </div>
+      </div>
+
+      <div class="weui-row">
+        <div class="weui-col-20">
+          <img src="images/m.jpg" class="img-responsive img-cricle" alt="">
+        </div> 
+        <div class="weui-col-80 text-left">
+          <div class="weui-row">
+            <div class="weui-col-70">
+              <p class="uname">小李</p>
+            </div>
+            <div class="weui-col-30 text-right c-grey biger time">34秒前</div>
+          </div>      
+          <div class="weui-row">
+            <div class="weui-col-100">
+              <p class="info biger">
+                我认为是这样的，首先这是一件不可多得的拍品。。。
+              </p>
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div class="weui-row">
+        <div class="weui-col-20">
+          <img src="images/m.jpg" class="img-responsive img-cricle" alt="">
+        </div> 
+        <div class="weui-col-80 text-left">
+          <div class="weui-row">
+            <div class="weui-col-70">
+              <p class="uname">小李</p>
+            </div>
+            <div class="weui-col-30 text-right c-grey biger time">34秒前</div>
+          </div>      
+          <div class="weui-row">
+            <div class="weui-col-100">
+              <p class="info biger">
+                我认为是这样的，首先这是一件不可多得的拍品。。。
+              </p>
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div class="weui-row">
+        <div class="weui-col-20">
+          <img src="images/m.jpg" class="img-responsive img-cricle" alt="">
+        </div> 
+        <div class="weui-col-80 text-left">
+          <div class="weui-row">
+            <div class="weui-col-70">
+              <p class="uname">小李</p>
+            </div>
+            <div class="weui-col-30 text-right c-grey biger time">34秒前</div>
+          </div>      
+          <div class="weui-row">
+            <div class="weui-col-100">
+              <p class="info biger">
+                我认为是这样的，首先这是一件不可多得的拍品。。。
+              </p>
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div class="weui-row">
+        <div class="weui-col-20">
+          <img src="images/m.jpg" class="img-responsive img-cricle" alt="">
+        </div> 
+        <div class="weui-col-80 text-left">
+          <div class="weui-row">
+            <div class="weui-col-70">
+              <p class="uname">小李</p>
+            </div>
+            <div class="weui-col-30 text-right c-grey biger time">34秒前</div>
+          </div>      
+          <div class="weui-row">
+            <div class="weui-col-100">
+              <p class="info biger">
+                我认为是这样的，首先这是一件不可多得的拍品。。。
+              </p>
+            </div>
+          </div>          
+        </div>
+      </div>     
+    </div>
+
+    <footer>
+      <div class="weui_tab footbar">
+        <div class="weui_tab_bd">
+        </div>
+        <div class="weui_tabbar">         
+          <div class="weui-row weui-no-gutter">
+            <div class="weui-col-80">
+              <form action="" method="post">
+                <input type="text" class="speak" placeholder="发表你的观点..">
+              </form>
+            </div>
+            <div class="weui-col-20"><a href="javascript:;" class="we-button button2" id="bid">留&nbsp;言</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="lib/jquery-2.1.4.js"></script>
+    <script src="js/jquery-weui.js"></script>
+    <script src='js/swiper.js'></script>
+
+    <script>
+      // 图片浏览控件（换成js-sdk）
+      var pb = $.photoBrowser({
+        items: [
+          "images/xl.jpg",
+          "images/xl.jpg",
+          "images/xl.jpg",          
+          "images/xl.jpg",
+          "images/xl.jpg",
+          "images/xl.jpg",          
+          "images/xl.jpg",
+          "images/xl.jpg",
+          "images/xl.jpg",
+        ],        
+      });
+      $(".pb").each(function(){
+        $(this).click(function(){
+          // alert($(this).attr('id')-1);
+          pb.open($(this).attr('id')-1);
+        });
+      });   
+
+    </script>
+    </body>
+  </html>

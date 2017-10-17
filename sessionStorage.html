@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+</head>
+<body>
+	<div id="box">
+		<input type="text" id="sessionInput" />
+		<p id="sessionMsg"></p>
+		<input type="button" value="保存数据" onclick="savesessionStorage('sessionInput');" />
+	    <input type="button" value="读取数据" onclick="loadsessionStorage('sessionMsg');" />
+    </div>
+	
+<script>
+	var huancun=document.documentElement.outerHTML;
+	function $(id){ return document.getElementById(id);}
+	console.log(document.getElementById("box").innerHTML);
+    function savesessionStorage(id){sessionStorage.setItem('message',document.getElementById("box").innerHTML);}
+    function loadsessionStorage(id){
+    	document.getElementById("box").innerHTML="";
+    	document.getElementById("box").innerHTML=sessionStorage.getItem("message");
+    }
+    // function savelocalStorage(id){localStorage.setItem("message",$(id).value);}
+    // function loadlocalStorage(id){$(id).innerHTML=localStorage.getItem("message");}
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>商家认证</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="艺易堂">
+
+    <link rel="stylesheet" href="lib/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mine.css">
+    <style>
+      .img-responsive{max-width:90%;margin:4% 0 4% 0;}
+      div.box{padding-top:11%;text-align: center;margin-bottom: 5px;}
+      textarea{border:none;font-size:12px;width:100%;overflow:hidden;resize: none;text-align:left;text-indent:1em;margin:5px 20px;margin-top:3%;border:1px solid #b3b3b3;border-radius:6px;padding:5px 0;}
+    </style>
+  </head>
+
+  <body ontouchstart>
+    <form action="#">
+      <div class="box" style="background:url(images/bg-rz6.jpg);background-size:cover;">
+        <label for="">
+          <img src="images/yyzz.jpg" class="img-responsive" alt="">
+        </label>
+      </div>
+      <div class="box" style="background:url(images/bg-rz4.jpg);background-size:cover;">
+        <label for="">
+          <img src="images/sfz.jpg" class="img-responsive" alt="">
+        </label>
+      </div>
+      <div class="box" style="background:url(images/bg-rz5.jpg);background-size:cover;">
+        <label for="">
+          <img src="images/sfz2.jpg" class="img-responsive" alt="">
+        </label>
+      </div>
+
+      <div class="box" style="background:url(images/bg-jj.jpg) no-repeat;background-size:contain;">
+        <div class="weui-row" style="background-color:#fff;margin-top:5px;padding-bottom:10px;">
+          <textarea name="" id="" cols="50" rows="5" placeholder="请在此处输入..."></textarea>
+        </div>     
+      </div>
+    </form>
+
+    <footer class="modify">
+      <div class="weui_tab footbar">        
+        <a href="release.html">       
+          <div class="weui-row weui-no-gutter">
+            <div class="weui-col-100 bg-green c-white">提交审核</div>
+          </div>
+        </a>
+      </div>
+    </footer>
+
+    <script src="lib/jquery-2.1.4.js"></script>
+    <script src="js/jquery-weui.js"></script>
+    <script>
+      //单选框脚本
+      $(function(){
+        $(".rz .weui_cell").each(function(){
+          $(this).click(function(){
+            var x = $(this).find('label');
+            if(x.hasClass('check')){
+              return;
+            }else{
+              $(this).parents().find('.check').removeClass('check');
+              x.addClass('check');
+            }
+          })
+        })
+      })
+    </script>
+    </body>
+  </html>

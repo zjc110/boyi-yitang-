@@ -1,0 +1,18 @@
+body{background-color:#ffffff;margin-bottom:0;}
+.weui-row.text-center{display:block;}
+.weui-row.weui-no-gutter .weui-col-33{float:left;}
+.we-card{padding:8px 4px;margin-top:0;}
+
+.weui-col-33 img{max-width:80%;}
+.weui-col-33{margin-bottom:10px;}
+.weui-col-33:last-child{}
+.weui-col-33 p{font-size:11px;}
+.weui_navbar{display:block;position:relative;}
+.sort1{height:1920px;background-color:#f8f8f8;position:fixed;}
+.sort2{background-color:#ffffff;overflow:hidden;margin-left:25%;}
+.weui_navbar_item{background-color:#f8f8f8;height:40px;line-height:40px;font-size:14px;padding:0;}
+.weui_navbar_item.weui_bar_item_on{background-color:#ffffff;}
+.weui_navbar:after,.weui_navbar_item:after{border:none;}
+.weui_tab_bd{padding-bottom:0;}
+
+footer{height:55px;}

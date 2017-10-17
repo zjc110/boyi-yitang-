@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>资料修改</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="艺拍堂">
+
+    <link rel="stylesheet" href="lib/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mine.css">
+  </head>
+
+  <body ontouchstart>
+    <img src="images/wykd.png" class="img-responsive" alt="">
+    <div class="we-card modify">
+      <a href="#">
+        <div class="weui-row">
+          <div class="weui-col-25">
+            <img src="images/user-deafault.png" class="img-responsive img-cricle" alt="">
+          </div>
+          <div class="weui-col-50">
+            <div class="username clearfix">
+              <p class="pull-left">艺术小帅</p>          
+            </div>
+            <p class="sign">(头像、昵称将微信同步)</p>
+          </div>
+          <div class="weui-col-25 update">
+            <img src="images/update.png" alt="">
+          </div>
+        </div>
+      </a>    
+    </div>
+    <div class="we-card m-info">       
+      <div class="weui_cell">
+        <div class="weui_cell_hd"><label class="weui_label">个人签名</label></div>
+        <div class="weui_cell_bd weui_cell_primary">
+          <input class="weui_input" type="tel" placeholder="请输入个人签名">
+        </div>
+      </div>
+      <div class="weui_cell">
+        <div class="weui_cell_hd"><label class="weui_label">联系人</label></div>
+        <div class="weui_cell_bd weui_cell_primary">
+          <input class="weui_input" type="tel" placeholder="请输入联系人">
+        </div>
+      </div>
+      <div class="weui_cell">
+        <div class="weui_cell_hd"><label class="weui_label">手机号</label></div>
+        <div class="weui_cell_bd weui_cell_primary clearfix">
+          <input class="weui_input tel pull-left" type="tel" placeholder="请输入手机号">
+          <span class="we-button button3 bg-green pull-left fs"/>发送</span>
+        </div>
+      </div>
+      <div class="weui_cell">
+        <div class="weui_cell_hd"><label class="weui_label">短信验证码</label></div>
+        <div class="weui_cell_bd weui_cell_primary">
+          <input class="weui_input" type="tel" placeholder="请输入短信验证码">
+        </div>
+      </div>
+      <div class="weui_cell">
+        <div class="weui_cell_hd"><label class="weui_label">微信号</label></div>
+        <div class="weui_cell_bd weui_cell_primary">
+          <input class="weui_input" type="tel" placeholder="请输入微信号">
+        </div>
+      </div>
+      <div class="weui_cell">
+        <div class="weui_cell_hd"><label class="weui_label">发货地址<span class="smaller">(选填)</span></label></div>
+        <div class="weui_cell_bd weui_cell_primary">
+          <input class="weui_input" type="tel" placeholder="请输入发货地址">
+        </div>
+      </div>     
+    </div>
+
+    <div class="weui_cell">
+      <p class="biger" style="color:#808080">用户认证</p>
+    </div>
+
+    <form action="#">
+      <div class="we-card m-info rz">  
+        <div class="weui_cell">
+          <div class="weui_cell_hd">
+            <p class="biger">普通用户</p>
+            <p class="small">无需提交任何资料</p>
+          </div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input name="rz" id="radio1" type="radio" value="0" checked="checked">
+            <label for="radio1" class="radio check"></label>
+          </div>
+        </div>
+        <div class="weui_cell">
+          <div class="weui_cell_hd">
+            <p class="biger">艺术家认证</p>
+            <p class="small">填写相关的认证信息，获得更多的官方推广</p>
+          </div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input name="rz" id="radio2" type="radio" value="1">
+            <label for="radio2" class="radio"></label>
+          </div>
+        </div>
+        <div class="weui_cell">
+          <div class="weui_cell_hd">
+            <p class="biger">商家认证</p>
+            <p class="small">填写营业执照等信息，获得更多的官方推广</p>
+          </div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input name="rz" id="radio3" type="radio" value="2">
+            <label for="radio3" class="radio"></label>
+          </div>
+        </div>
+      </div>
+    </form>
+    
+    <!-- 认证前 -->
+    <footer class="modify">
+      <div class="weui_tab footbar">        
+        <a href="rz.html">       
+          <div class="weui-row weui-no-gutter">
+            <div class="weui-col-100 bg-green c-white">下一步</div>
+          </div>
+        </a>
+      </div>
+    </footer>
+
+    <!-- 认证后 -->
+    <!-- <footer class="modify">
+      <div class="weui_tab footbar">        
+        <a href="release.html">       
+          <div class="weui-row weui-no-gutter">
+            <div class="weui-col-100 bg-green c-white">保存资料</div>
+          </div>
+        </a>
+      </div>
+    </footer> -->
+
+    <script src="lib/jquery-2.1.4.js"></script>
+    <script src="js/jquery-weui.js"></script>
+    <script>      
+      $(function(){
+        //单选框脚本
+        $(".rz .weui_cell").each(function(){
+          $(this).click(function(){
+            var x = $(this).find('label');
+            if(x.hasClass('check')){
+              return;
+            }else{
+              $('.rz').find('input[type=radio]').attr('checked',false);
+              $(this).parents().find('.check').removeClass('check');
+              x.addClass('check');
+              x.parents('.weui_cell_bd').find('input[type=radio]').attr('checked',true);
+            }
+          })
+        });
+
+        //短信倒计时
+        $(".fs").click(function(){
+          if($(this).hasClass('waiting')){
+            alert("请稍后再试");
+            return false;
+          }else{
+            $(this).removeClass('bg-green');
+            $(this).addClass('bg-grey');
+            $(this).addClass('waiting');
+            $(this).attr('disabled','true');
+            Countdown(60,$(this));  
+          }                  
+        });
+
+        function Countdown(s, obj) {
+          var timer = s;
+          if (timer > 1) {
+              timer -= 1;
+              console.log(timer);
+              $(obj).html(timer);
+              setTimeout(function() {
+                  Countdown(timer, obj);
+              }, 1000);
+          }else{
+            $(obj).removeClass('waiting');
+            $(obj).html('重发');
+            $(obj).removeClass('bg-grey');
+            $(obj).addClass('bg-green');
+            $(obj).removeAttr('disabled');
+          }
+        }
+      })
+    </script>
+    </body>
+  </html>

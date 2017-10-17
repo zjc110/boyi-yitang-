@@ -1,0 +1,106 @@
+.we-card{margin-top:0;padding:15px 15px;padding-top:0px;}
+.weui-cells.we-card{padding:5px 0 0 0;}
+.weui-cells.we-card .weui-row{padding:10px 15px;border-bottom:1px solid rgba(219,219,219,.4);}
+.fixbar{width:100%;height:30px;background-color:#f5f5f6;color:#000000;line-height:30px;position:fixed;top:0;font-size:14px;z-index:999;}
+.fixbar .weui-col-75{padding-left:15px;padding-right:15px;}
+.fixbar .weui-col-25{text-align:center;color:#ffffff;background-color:#1fcf12;}
+.fixbar .weui-col-25 a{color:#ffffff;}
+.fixbar span{color:#c12332;margin:0 1px;}
+.ptitle{font-size:21px;max-height:48px;line-height:24px;margin-bottom:8px;overflow:hidden;}
+.stitle{font-size:16px;}
+.prop{margin-bottom:8px;font-size:14px;overflow:hidden;}
+.prop.info{font-size:11px;display:block;}
+.prop.info .weui-col-33{float:left;padding-left:14px;width:33%;}
+.prop.info .smallicon{margin-top:-2px;}
+.prop .c-grey{width:60px;height:16px;}
+.prop span{}
+
+p.prop{color:#393a3e;}
+.pic{margin-top:10px;}
+.refresh img{max-width:80%;}
+.icon6{margin-top:2px;}
+
+.uname{font-size:14px;}
+.time{font-size:12px;color:#b3b3b3;margin-top:3px;}
+.price{font-size:14px;font-weight:bolder;}
+
+.weui-cells.we-card .weui-col-40{width:calc((100% - 1px*1.5) / 2.5);}
+.weui-cells.we-card .weui-col-40:nth-child(2){padding-top:2px;}
+.weui-cells.we-card .weui-col-40:nth-child(3){padding-top:6px;}
+
+.record .weui-col-15:nth-child(1){margin-top:7px;}
+.record .weui-col-15,.record .weui-col-45{padding-right:10px;}
+.record .weui-col-25{margin-top: 10px;}
+
+.collect{background:none;padding:10px 0;}
+.collect .collection{width:70px;height:70px;margin:0 auto;font-size:14px;text-align:center;line-height:100px;cursor:pointer;}
+.collect .collection.c1{background:url(../images/icon-collect.png) no-repeat;background-size:100%;color:#4a4a4a;}
+.collect .collection.c2{background:url(../images/icon-collect2.png) no-repeat;background-size:100%;color:#1fcf12;}
+
+footer{height:57px;}
+.footbar{z-index:999;height:49px;}
+.footbar a{color:#ffffff;}
+.weui_tabbar{font-size:17px;color:#ffffff;}
+.weui_tabbar .weui-row{width:100%;}
+.weui_tabbar .weui-col-66,.weui_tabbar .weui-col-33{padding:11px 0;}
+/*.weui_tabbar .weui-col-66{background-color:#2f2f33;}*/
+.weui_tabbar .weui-col-33{background-color:#1fcf12;}
+.weui-photo-browser-modal{z-index:99999;}
+.weui-picker-overlay, .weui-picker-container{z-index:9999;}
+
+.weui-row.clearfix{display:block;}
+.pic .weui-col-33{width:32.666%;margin:0.5%;}
+.weui-row.clearfix .weui-col-33{float:left;}
+.weui-row.clearfix .weui-col-33:nth-child(3n-2){margin-left:0;}
+.weui-row.clearfix .weui-col-33:nth-child(3n-3){margin-right:0;}
+
+.weui-cells.we-card .weui-row.title{padding-bottom:15px;}
+.weui-cells.we-card .weui-row.title .weui-col-66{height:22px;line-height:22px;}
+.weui-cells.we-card .weui-row.title .weui_cell_ft{font-size:14px;line-height:19px;}
+
+.we-card.user{margin-top:30px;padding:10px 15px;}
+.user .weui-col-50{width:55%;padding-top:10px;}
+.user .weui-col-20{text-align:center;}
+.user .u-pic{width:60px;border:2px solid #ffffff;}
+.user .u-name{font-size:18px;color:#232323;}
+.weui-row.weui-no-gutter .weui-col-30{width:25%;}
+.user .weui-col-30 img{width:28px;margin-top:22px;border:1px solid #ffffff;}
+.user .weui-col-30 img:nth-child(1){margin-right:12px;}
+.sign{font-size:10px;color:#b3b3b3;height:20px;overflow:hidden;margin-top:3px;}
+.intro{height: 27px;line-height: 27px;display:block;}
+
+.weui-photo-browser-modal .photo-container img{margin:-30px auto 0 auto;}
+div.video-play{position:relative;}
+div.video-play:after{
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50% 50%;
+  background-image: url(../media/video_play.png);
+}
+
+@media screen and (min-width: 414px){
+  .weui-cells.we-card .weui-col-40{padding-top:5px;}
+}
+
+@media screen and (min-width: 375px){
+  .record .weui-col-15:nth-child(1){margin-top:5px;}
+}
+
+@media screen and (max-width: 320px){
+  .prop{margin-bottom:8px;font-size:12px;overflow:hidden;}
+  .prop .c-grey{width:50px;height:16px;}
+  .time{font-size:10px;}
+  .uname{font-size:10px;}
+  .user .u-pic{width:54px;margin-top: 6px;}
+  .user .weui-col-50{padding-left:3px;}
+  .user .weui-col-30 img{width:24px;margin-top:25px;}
+  .record .weui-col-15:nth-child(1){margin-top:3px;}
+  .record .weui-col-25{margin-top:5px;}
+}

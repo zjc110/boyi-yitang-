@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>私信</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="艺拍堂">
+
+    <link rel="stylesheet" href="lib/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/chat.css">
+
+  <body ontouchstart>
+    <div class="topbar">
+      <div class="weui-row text-center">
+        <div class="weui-col-15"></div>
+        <div class="weui-col-70">腾云驾雾轩·海派著名代表</div>
+        <div class="weui-col-15"></div>
+      </div>
+    </div><!-- topbar -->
+    
+    <div class="m-chat">
+      <span class="time">2016/08/02&nbsp;14:02</span>
+      <div class="left-chat">
+        <div class="we-row weui-no-gutter clearfix">
+          <div class="weui-col-15 pull-left"><img src="images/user-deafault.png" class="pic-head img-responsive" alt=""></div>
+          <div class="weui-col-5 pull-left">&nbsp;</div>
+          <div class="weui-col-65 pull-left">
+            <span class="info">你好么？？？？？？？？？123456123456</span>
+          </div>
+          <div class="weui-col-15 pull-left">&nbsp;</div>
+        </div>
+      </div>
+      <div class="right-chat">
+        <div class="we-row weui-no-gutter clearfix">
+          <div class="weui-col-15 pull-left">&nbsp;</div>
+          <div class="weui-col-65 pull-left">
+            <span class="info">你好么？？</span>
+          </div>
+          <div class="weui-col-5 pull-left">&nbsp;</div>
+          <div class="weui-col-15 pull-left"><img src="images/user-deafault.png" class="pic-head img-responsive" alt=""></div>         
+        </div>
+      </div>
+      <div class="left-chat">
+        <div class="we-row weui-no-gutter clearfix">
+          <div class="weui-col-15 pull-left"><img src="images/user-deafault.png" class="pic-head img-responsive" alt=""></div>
+          <div class="weui-col-5 pull-left">&nbsp;</div>
+          <div class="weui-col-65 pull-left">
+            <span class="info">你好么？？？111</span>
+          </div>
+          <div class="weui-col-15 pull-left">&nbsp;</div>
+        </div>
+      </div>
+      <div class="left-chat">
+        <div class="we-row weui-no-gutter clearfix">
+          <div class="weui-col-15 pull-left"><img src="images/user-deafault.png" class="pic-head img-responsive" alt=""></div>
+          <div class="weui-col-5 pull-left">&nbsp;</div>
+          <div class="weui-col-65 pull-left">
+            <span class="info">你好么？？？？？？？？？123456</span>
+          </div>
+          <div class="weui-col-15 pull-left">&nbsp;</div>
+        </div>
+      </div>
+      <span class="time">2016/08/02&nbsp;14:12</span>
+      <div class="right-chat">
+        <div class="we-row weui-no-gutter clearfix">
+          <div class="weui-col-15 pull-left">&nbsp;</div>
+          <div class="weui-col-65 pull-left">
+            <span class="info">你好么？？？？？？？？？123456</span>
+          </div>
+          <div class="weui-col-5 pull-left">&nbsp;</div>
+          <div class="weui-col-15 pull-left"><img src="images/user-deafault.png" class="pic-head img-responsive" alt=""></div>         
+        </div>
+      </div>
+      <div class="right-chat">
+        <div class="we-row weui-no-gutter clearfix">
+          <div class="weui-col-15 pull-left">&nbsp;</div>
+          <div class="weui-col-65 pull-left">
+            <span class="info">你好么？？？？？？？？？你好么？？？？？？？？？你好么？？？？？？？？？你好么？？？？？？？？？你好么？？？？？？？？？你好么？？？？？？？？？123456</span>
+          </div>
+          <div class="weui-col-5 pull-left">&nbsp;</div>
+          <div class="weui-col-15 pull-left"><img src="images/user-deafault.png" class="pic-head img-responsive" alt=""></div>         
+        </div>
+      </div>
+      <span class="time">2016/08/02&nbsp;14:22</span>
+      <div class="right-chat">
+        <div class="we-row weui-no-gutter clearfix">
+          <div class="weui-col-15 pull-left">&nbsp;</div>
+          <div class="weui-col-65 pull-left">
+            <span class="info">你好么？？？？？？？？？123456</span>
+          </div>
+          <div class="weui-col-5 pull-left">&nbsp;</div>
+          <div class="weui-col-15 pull-left"><img src="images/user-deafault.png" class="pic-head img-responsive" alt=""></div>         
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="weui_tab footbar">
+        <div class="weui_tab_bd">
+        </div>
+        <div class="weui_tabbar">         
+          <div class="weui-row weui-no-gutter">
+            <div class="weui-col-80">
+              <form action="" method="post">
+                <input type="text" class="speak" value="" placeholder="想说点什么..">
+              </form>
+            </div>
+            <div class="weui-col-20"><a href="javascript:;" class="we-button button2 send" id="">发&nbsp;送</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="lib/jquery-2.1.4.js"></script>
+    <script src="js/jquery-weui.js"></script>
+    <script src="js/swiper.js"></script>
+    <script>
+      //聊天交互
+      $(function(){
+        // console.log("abccba");
+        // $(window).bind('beforeunload',function(){console.log('123321');});
+
+        //底部输入框.获取message的值
+        $(".send").click(function(){
+          var message = $(".speak").val();
+          // console.log("clickmsg="+message);
+          //初始化底部输入框
+          $(".speak").val("");          
+          //调用messageshow
+          messageshow("1",message);
+        });
+
+        //异步请求接口，如获得message的值，call(messageshow("2",message));
+
+        //选择信息的展示方式，1为right-chat，2为left-chat
+        function messageshow(type,message){
+          var type = Number(type);
+          var msg = message;
+          // console.log("msg="+msg);  
+          switch(type){
+            case 1:              
+                messageblock(msg);
+              break;
+            case 2:
+                messageblock2(msg);
+              break;
+          }
+        }
+
+        function messageblock(msg){
+          //创建right-chat DOM  PS：除了msg,头像可以用全局变量反正也就2个人
+          var msgbox = "<div class='right-chat'>"+"<div class='we-row weui-no-gutter clearfix'>"+"<div class='weui-col-15 pull-left'>"+"&nbsp;"+"</div>"+
+          "<div class='weui-col-65 pull-left'>"+"<span class='info'>"+msg+"</span>"+"</div>"+"<div class='weui-col-5 pull-left'>"+"&nbsp;"+"</div>"+"<div class='weui-col-15 pull-left'>"+"<img src='images/user-deafault.png' class='pic-head img-responsive' alt=''>"+"</div>"+"</div>"+"</div>";
+          //添加到聊天视图
+          $(".m-chat").append(msgbox);
+          //--------------为优化体验，视图更新应早于异步提交。可以用小图标来模拟发送是否成功---------
+          //-------------------------此处应该做message异步提交--------------------------          
+          //自动滚到底部
+          $("html,body").animate({scrollTop:$("footer").offset().top},1000);
+        }
+
+        function messageblock2(msg){
+          //创建left-chat DOM  PS：除了msg,头像可以用全局变量反正也就2个人
+          var msgbox = "<div class='left-chat'>"+"<div class='we-row weui-no-gutter clearfix'>"+"<div class='weui-col-15 pull-left'>"+"<img src='images/user-deafault.png' class='pic-head img-responsive' alt=''>"+"</div>"+"<div class='weui-col-5 pull-left'>"+"&nbsp;"+"</div>"+"<div class='weui-col-65 pull-left'>"+"<span class='info'>"+msg+"</span>"+"</div>"+"<div class='weui-col-15 pull-left'>"+"&nbsp;"+"</div>"+"</div>"+"</div>";
+          //添加到聊天视图
+          $(".m-chat").append(msgbox);
+          //-------------------------此处可以改为icon提醒，点击再滚到底部--------------------------
+          //自动滚到底部
+          $("html,body").animate({scrollTop:$("footer").offset().top},1000);
+        }
+
+      })
+    </script>
+    </body>
+  </html>
